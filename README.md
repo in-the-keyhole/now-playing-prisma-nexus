@@ -10,6 +10,10 @@ Run `docker compose up -d` to start a local postgres server.
 
 Copy the `dotenv` file and rename the copy to `.env` - the default values can be left for now. They point to the Postgres server setup in the docker-compose file, so if you want to use your own server, update the values.
 
+## Usage
+
+Run `yarn dev` to start the server and go to `http://localhost:4000` to use the GraphQL playground. You can seed some movies by running the `seedMovies` mutation. Query the movies by running the `movies` query.
+
 ## Prisma
 
 Prisma is setup out of the gate to work correctly. You can update the `schema.prisma` file to add or change the schema that will be persisted to the database. After making changes, you'll need to run `prisma migrate dev` to create migrations and it will also update the `@prisma/client` in the project to give you the appropriate types to work with. For a quickstart from scratch, check out the [walkthrough](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch-typescript-postgres).
