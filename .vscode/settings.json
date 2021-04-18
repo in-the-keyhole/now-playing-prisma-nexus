@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5222,
+            "driver": "PostgreSQL",
+            "name": "prisma",
+            "database": "prisma",
+            "username": "prisma",
+            "password": "prisma"
+        }
+    ]
+}
